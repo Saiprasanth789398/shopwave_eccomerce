@@ -1,0 +1,104 @@
+# =============================================
+#  ShopWave — .gitignore
+#  Place this in the ROOT folder (shopwave/)
+#  Covers both backend/ and frontend/
+# =============================================
+
+
+# ── Dependencies ──────────────────────────────
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+
+# ── Environment Variables ─────────────────────
+# NEVER commit .env files — they contain secrets
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+**/env
+**/.env
+**/.env.*
+
+
+# ── Build Output ──────────────────────────────
+dist/
+build/
+**/dist/
+**/build/
+frontend/dist/
+frontend/build/
+
+
+# ── Vite ─────────────────────────────────────
+frontend/.vite/
+**/.vite/
+vite.config.js.timestamp-*
+
+
+# ── Logs ─────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# ── OS Files ─────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+
+# ── IDE / Editor ─────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+
+
+# ── Testing ───────────────────────────────────
+coverage/
+**/coverage/
+.nyc_output/
+
+
+# ── Package Manager Locks (keep one) ─────────
+# Keep package-lock.json but ignore others
+yarn.lock
+pnpm-lock.yaml
+
+
+# ── Uploads / Media ──────────────────────────
+backend/uploads/
+public/uploads/
+*.jpg.tmp
+*.png.tmp
+
+
+# ── Misc ─────────────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tgz
+*.zip
