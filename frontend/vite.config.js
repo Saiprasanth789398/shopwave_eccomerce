@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Every request starting with /api is forwarded to the backend
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://shopwave-eccomerce.onrender.com',
         changeOrigin: true,
         secure: false,
       },
